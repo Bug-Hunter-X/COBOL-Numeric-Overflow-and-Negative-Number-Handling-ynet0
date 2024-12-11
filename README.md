@@ -1,0 +1,3 @@
+# COBOL Numeric Overflow and Negative Number Handling
+
+This repository demonstrates a potential numeric overflow bug in a COBOL program and provides a solution. The original program lacks robust error handling and only checks for positive value overflows, neglecting the possibility of negative numbers leading to unexpected or incorrect calculations. The improved solution includes checks for both positive and negative overflows.
