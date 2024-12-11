@@ -1,0 +1,16 @@
+01  WS-AREA-1 PIC 9(5) VALUE 0.
+01  WS-AREA-2 PIC 9(5) VALUE 0.
+
+PROCEDURE DIVISION.
+    ADD 1 TO WS-AREA-1.
+    IF WS-AREA-1 > 99999 THEN
+        DISPLAY "Error: WS-AREA-1 overflow"
+        GOBACK
+    END-IF
+    ADD 1 TO WS-AREA-2.
+    IF WS-AREA-2 > 99999 THEN
+        DISPLAY "Error: WS-AREA-2 overflow"
+        GOBACK
+    END-IF
+    DISPLAY "WS-AREA-1: " WS-AREA-1 " WS-AREA-2: " WS-AREA-2
+    GOBACK.
